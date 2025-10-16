@@ -1,4 +1,4 @@
-echo "# 🚀✨ WAREQ: CyberLevel AI SaaS Project ✨🚀  
+<p aling='center'> "# 🚀✨ WAREQ: CyberLevel AI SaaS Project ✨🚀 </p>
 
 <p align='center'>
   <img src='https://img.shields.io/badge/WareQ-CyberLevel-blueviolet?style=for-the-badge&logo=python&logoColor=cyan'/>
