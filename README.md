@@ -1,108 +1,82 @@
-cho "# ✨🚀 WAREQ: CyberLevel AI SaaS Project ✨🚀  
+echo "# 🚀✨ WAREQ: CyberLevel AI SaaS Project ✨🚀  
 
 <p align='center'>
-  <img src='https://img.shields.io/badge/WareQ-CyberLevel-blueviolet?style=for-the-badge&logo=python&logoColor=cyan' alt='WareQ Badge'/>
-  <img src='https://img.shields.io/badge/Python-3.13-blue?style=for-the-badge&logo=python' alt='Python Badge'/>
-  <img src='https://img.shields.io/badge/Django-5.2.6-green?style=for-the-badge&logo=django' alt='Django Badge'/>
-  <img src='https://img.shields.io/badge/AI-Driven-red?style=for-the-badge&logo=openai' alt='AI Badge'/>
-  <img src='https://img.shields.io/badge/Full_Stack-Yes-orange?style=for-the-badge&logo=vercel' alt='Full Stack Badge'/>
+  <img src='https://img.shields.io/badge/WareQ-CyberLevel-blueviolet?style=for-the-badge&logo=python&logoColor=cyan'/>
+  <img src='https://img.shields.io/badge/Python-3.13-blue?style=for-the-badge&logo=python'/>
+  <img src='https://img.shields.io/badge/Django-5.2.6-green?style=for-the-badge&logo=django'/>
+  <img src='https://img.shields.io/badge/AI-Driven-red?style=for-the-badge&logo=openai'/>
+  <img src='https://img.shields.io/badge/UI/UX-Cyberpunk-pink?style=for-the-badge&logo=figma'/>
+  <img src='https://img.shields.io/badge/Full_Stack-Yes-orange?style=for-the-badge&logo=vercel'/>
 </p>  
 
 ---
 
 ## 🌌 Overview  
-**WareQ** is a **next-gen AI SaaS** — a cinematic, cyberpunk-styled platform for **warehouse, logistics, inventory, finance, suppliers, customers, and organizations**.  
-Built to be:  
-- 🔐 **Secure** — Zero-trust, enterprise-grade.  
-- ⚡ **Fast** — Real-time dashboards.  
-- 🤖 **AI-Powered** — Forecasting, automation, and analytics.  
-- 🌍 **Scalable** — From startups to global enterprises.  
-- 🎨 **Cinematic** — Cyberpunk UI/UX with animations.  
+**WareQ** is the **cyber-godmode AI SaaS platform**: a neon-lit ecosystem merging **warehousing, logistics, finance, suppliers, customers, and enterprise dashboards** into one cinematic platform.  
+Built for **speed ⚡, zero-trust security 🔐, AI automation 🤖, and global scalability 🌍** — wrapped in a **cyberpunk design system 🎨** that screams innovation.  
 
 ---
 
-## 📂 Project Architecture  
+## 🎬 Animations & Design  
+- 🌌 Particle backgrounds  
+- ⚡ Glitch + typewriter hero text  
+- 🎭 Neon gradient CTAs  
+- ✨ Scroll reveal transitions  
+- 🎞️ Cinematic preloader  
+- 📱 Responsive cyberpunk UI  
+
+---
+
+## 📑 Core Features  
+- ⚡ Lightning speed dashboards  
+- 🔐 AI-powered security and compliance  
+- 🤖 Demand/supply forecasting  
+- 📊 Finance, inventory, logistics, suppliers, customers modules  
+- 🎨 Cyberpunk UI with hover tilt, neon highlights, glitch headers  
+
+---
+
+## 📂 Architecture  
 \`\`\`bash
 wareq_core/
 ├── accounts/        # Authentication
 ├── ai/              # AI modules
 ├── api/             # API endpoints
-├── core/            # Base: index, about, features, pricing
+├── core/            # Landing + About + Features + Pricing
 ├── customers/       # Customer management
-├── dashboard/       # Enterprise dashboards
-├── events/          # Events & calendar
-├── finance/         # Finance module
+├── dashboard/       # Cyber dashboard
+├── events/          # Scheduling
+├── finance/         # Finance & billing
 ├── inventory/       # Inventory control
-├── logistics/       # Logistics ops
-├── orders/          # Order tracking
-├── organizations/   # Organization management
-├── suppliers/       # Supplier system
+├── logistics/       # Logistics pipeline
+├── orders/          # Orders management
+├── organizations/   # Organization hub
+├── suppliers/       # Suppliers network
 ├── support/         # Support tickets
-└── templates/core/  # Frontend templates
+└── templates/core/  # Cinematic templates
 \`\`\`  
 
 ---
 
-## 📑 Pages  
-- 🏠 **Index (Landing Page)**  
-- ℹ️ **About**  
-- 🧩 **Features**  
-- 💸 **Pricing**  
-- 📊 **Dashboard**  
-- 👥 **Customers**  
-- 📦 **Inventory**  
-- 🚚 **Logistics**  
-- 💰 **Finance**  
-- 🛠️ **Support**  
-- 🌐 **Organizations**  
-
----
-
-## ✨ Features  
-- ⚡ **Lightning Speed** dashboards  
-- 🔐 **Cyber Security** (Zero-trust, encrypted)  
-- 🤖 **AI Forecasting** for demand & supply  
-- 🌍 **Global Scalability**  
-- 📊 **Enterprise Modules** (finance, logistics, suppliers, etc.)  
-- 🎨 **Cinematic Frontend**:  
-  - Preloader animations  
-  - Typewriter hero text  
-  - Glitch effects  
-  - Cyberpunk particles background  
-  - Neon CTAs with animated gradients  
-  - Scroll reveal sections  
+## 📅 Roadmap 2025 → 2026  
+- **Q4 2025:** 🚀 Initial live deployment (MVP launch)  
+- **Q1 2026:** 🤖 AI forecasting engine upgrade  
+- **Q2 2026:** 🌍 Global scaling + multi-language support  
+- **Q3 2026:** 🛡️ Cybersecurity layer enhancements  
+- **Q4 2026:** 🎨 Full SaaS marketplace integrations  
 
 ---
 
 ## 🚀 Installation  
 \`\`\`bash
-# clone the repo
 git clone https://github.com/Jacob11Q1/WareQ-CyperLevel-Ai-SaaS-Project.git
 cd WareQ-CyperLevel-Ai-SaaS-Project
-
-# create virtual environment
 python -m venv venv
-source venv/bin/activate  # (Windows: venv\\Scripts\\activate)
-
-# install dependencies
+venv\\Scripts\\activate
 pip install -r requirements.txt
-
-# run migrations
 python manage.py migrate
-
-# start dev server
 python manage.py runserver
 \`\`\`  
-
----
-
-## 🤝 Contribution  
-This is a **personal cyber project** by **Jacob**, but forks and ideas are welcome.  
-
----
-
-## 🛡️ License  
-MIT License — use, fork, evolve freely.  
 
 ---
 
@@ -114,5 +88,9 @@ MIT License — use, fork, evolve freely.
 ---
 
 <p align='center'>
-  ⚡ Made with Python, Django & Cyberpunk Energy ⚡  
+  <img src='https://img.shields.io/badge/Hire-Me-brightgreen?style=for-the-badge&logo=github'/>
+  <img src='https://img.shields.io/badge/Open-Source-blue?style=for-the-badge&logo=git'/>
+  <img src='https://img.shields.io/badge/Status-Live-success?style=for-the-badge&logo=vercel'/>
 </p>  
+
+<p align='center'>⚡ Made with Python, Django & Cyberpunk Energy ⚡</p>  
