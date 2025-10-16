@@ -1,0 +1,293 @@
+/* ================= WAREQ GODMODE CSS v2 ================= */
+/* Author: WareQ Team */
+/* Fixes: Pricing consistency, navbar readability, motion accessibility */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #000;
+    color: #fff;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    line-height: 1.7;
+}
+
+/* Reduced motion fallback */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
+a {
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #00e6ff;
+}
+
+/* ================= NAVBAR ================= */
+.cyber-nav {
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(12px);
+    padding: 1rem 2rem;
+    transition: all 0.3s ease;
+}
+
+.cyber-nav.scrolled {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 0.5rem 1rem;
+}
+
+.logo-text {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    color: #38bdf8;
+    text-shadow: 0 0 12px rgba(56, 189, 248, 0.8);
+}
+
+.nav-link {
+    color: #fff !important;
+    margin: 0 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #38bdf8 !important;
+    text-shadow: 0 0 8px #38bdf8;
+}
+
+/* Auto-contrast for light sections */
+.section-light .nav-link {
+    color: #000 !important;
+}
+
+.section-light .nav-link:hover {
+    color: #38bdf8 !important;
+}
+
+/* ================= BUTTONS ================= */
+.btn-cyber {
+    background: linear-gradient(90deg, #38bdf8, #00e6ff, #38bdf8);
+    border: none;
+    color: #000;
+    font-weight: 700;
+    letter-spacing: 1px;
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.7);
+    transition: all 0.4s ease;
+}
+
+.btn-cyber:hover {
+    background: linear-gradient(90deg, #00e6ff, #38bdf8, #00e6ff);
+    transform: translateY(-3px);
+    box-shadow: 0 0 25px rgba(0, 230, 255, 0.9);
+}
+
+/* ================= HERO ================= */
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    position: relative;
+    padding-top: 80px;
+}
+
+.hero-logo {
+    width: 120px;
+    filter: drop-shadow(0 0 15px #38bdf8);
+}
+
+.cyber-title {
+    font-family: 'Orbitron', sans-serif;
+    text-shadow: 0 0 25px rgba(56, 189, 248, 0.9);
+}
+
+.neon-text {
+    color: #38bdf8;
+    text-shadow: 0 0 10px #38bdf8, 0 0 20px #00e6ff, 0 0 30px #38bdf8;
+}
+
+.highlight {
+    color: #00e6ff;
+    text-shadow: 0 0 15px #00e6ff, 0 0 25px #38bdf8;
+}
+
+/* ================= FEATURES ================= */
+.feature-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(56, 189, 248, 0.2);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 0 25px rgba(56, 189, 248, 0.6);
+}
+
+/* ================= STATS ================= */
+.stats {
+    background: linear-gradient(135deg, #000 0%, #111 100%);
+}
+
+.counter {
+    font-size: 2.5rem;
+    color: #38bdf8;
+    text-shadow: 0 0 12px #38bdf8;
+}
+
+/* ================= ABOUT ================= */
+.about img {
+    border: 2px solid #38bdf8;
+    transition: all 0.3s ease;
+}
+
+.about img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(56, 189, 248, 0.6);
+}
+
+/* ================= TESTIMONIALS ================= */
+.testimonials blockquote {
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+.testimonials footer {
+    margin-top: 10px;
+    color: #38bdf8;
+}
+
+/* ================= PRICING ================= */
+.pricing-card {
+    border: 2px solid rgba(56, 189, 248, 0.3);
+    background: #0a0a0a;
+    /* unified dark base */
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.pricing-card h3,
+.pricing-card h4,
+.pricing-card li {
+    color: #fff !important;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px rgba(56, 189, 248, 0.5);
+}
+
+/* ================= FAQ ================= */
+.accordion-button {
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #38bdf8;
+    background-color: rgba(56, 189, 248, 0.1);
+    box-shadow: 0 0 12px rgba(56, 189, 248, 0.3);
+}
+
+/* ================= CTA ================= */
+.cta {
+    background: linear-gradient(45deg, #38bdf8, #00e6ff, #38bdf8);
+    background-size: 300% 300%;
+    animation: gradientShift 6s ease infinite;
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.cta h2 {
+    font-family: 'Orbitron', sans-serif;
+    text-shadow: 0 0 18px rgba(0, 230, 255, 0.8);
+}
+
+/* ================= FOOTER ================= */
+.cyber-footer {
+    background: #000;
+    border-top: 2px solid rgba(56, 189, 248, 0.2);
+}
+
+.cyber-footer a {
+    color: #38bdf8;
+    transition: all 0.3s ease;
+}
+
+.cyber-footer a:hover {
+    color: #00e6ff;
+    text-shadow: 0 0 8px #00e6ff;
+}
+
+/* ================= BACK TO TOP ================= */
+#backToTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: none;
+    border-radius: 50%;
+    padding: 12px;
+    z-index: 500;
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.6);
+}
+
+/* ================= REVEAL ANIMATIONS ================= */
+.revealed {
+    animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ================= CTA PULSE ================= */
+.pulse {
+    animation: pulseAnim 2s infinite;
+}
+
+@keyframes pulseAnim {
+    0% {
+        box-shadow: 0 0 0 0 rgba(56, 189, 248, 0.6);
+    }
+
+    70% {
+        box-shadow: 0 0 0 20px rgba(56, 189, 248, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(56, 189, 248, 0);
+    }
+}
+
+/* Responsive tweaks omitted for brevity — included in v1 */

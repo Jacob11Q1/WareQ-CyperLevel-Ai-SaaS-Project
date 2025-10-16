@@ -1,0 +1,97 @@
+{% extends "core/base.html" %}
+{% load static %}
+{% block title %}Features{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'core/css/features.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<!-- ================= HERO ================= -->
+<section class="features-hero text-center text-light d-flex align-items-center justify-content-center">
+    <div class="container">
+        <h1 class="display-3 fw-bold neon-text">Our <span class="highlight">Features</span></h1>
+        <p class="lead mt-3">
+            More than software — WareQ is a cyber-grade SaaS experience built to dominate speed, security, and
+            intelligence.
+        </p>
+    </div>
+</section>
+
+<!-- ================= FEATURE GRID ================= -->
+<section class="features-grid py-5">
+    <div class="container">
+        <h2 class="fw-bold text-center mb-5 text-dark">The Core Powers of WareQ</h2>
+        <div class="row g-4 text-center">
+            <!-- Speed -->
+            <div class="col-md-4">
+                <div class="feature-card p-4 rounded shadow-lg h-100">
+                    <i class="bi bi-speedometer2 fs-1 neon-text"></i>
+                    <h4 class="mt-3">Lightning Speed</h4>
+                    <p>Sub-second dashboards, blazing APIs, and instant sync across warehouses globally.</p>
+                </div>
+            </div>
+            <!-- Security -->
+            <div class="col-md-4">
+                <div class="feature-card p-4 rounded shadow-lg h-100">
+                    <i class="bi bi-shield-lock fs-1 neon-text"></i>
+                    <h4 class="mt-3">Cyber Security</h4>
+                    <p>Zero-trust architecture, encryption at every layer, and enterprise-grade compliance.</p>
+                </div>
+            </div>
+            <!-- AI -->
+            <div class="col-md-4">
+                <div class="feature-card p-4 rounded shadow-lg h-100">
+                    <i class="bi bi-cpu fs-1 neon-text"></i>
+                    <h4 class="mt-3">AI Intelligence</h4>
+                    <p>Smart forecasts, autonomous workflows, and predictive insights for enterprise scaling.</p>
+                </div>
+            </div>
+            <!-- Integrations -->
+            <div class="col-md-4">
+                <div class="feature-card p-4 rounded shadow-lg h-100">
+                    <i class="bi bi-plug fs-1 neon-text"></i>
+                    <h4 class="mt-3">Seamless Integrations</h4>
+                    <p>Connect effortlessly with ERP, CRM, eCommerce, and payment ecosystems.</p>
+                </div>
+            </div>
+            <!-- Scalability -->
+            <div class="col-md-4">
+                <div class="feature-card p-4 rounded shadow-lg h-100">
+                    <i class="bi bi-bar-chart-steps fs-1 neon-text"></i>
+                    <h4 class="mt-3">Infinite Scalability</h4>
+                    <p>From startups to enterprises — grow without limits on a multi-tenant architecture.</p>
+                </div>
+            </div>
+            <!-- Support -->
+            <div class="col-md-4">
+                <div class="feature-card p-4 rounded shadow-lg h-100">
+                    <i class="bi bi-headset fs-1 neon-text"></i>
+                    <h4 class="mt-3">24/7 AI Support</h4>
+                    <p>Always-on AI agents + human backup, ensuring uninterrupted operations worldwide.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= QUOTE ================= -->
+<section class="features-quote text-center text-light">
+    <div class="container">
+        <blockquote>
+            <p class="fw-bold">“WareQ isn't just SaaS. It's a cyber command center for the future of logistics.”</p>
+        </blockquote>
+    </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="features-cta text-center text-light">
+    <div class="container">
+        <h2 class="fw-bold mb-3">Experience the Future of Warehousing</h2>
+        <p class="mb-4">Enter the next era of speed, intelligence, and security with WareQ.</p>
+        <a href="/pricing" class="btn btn-lg btn-cyber px-5 py-3">View Plans</a>
+    </div>
+</section>
+
+{% endblock %}

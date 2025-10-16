@@ -1,0 +1,181 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- META -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WareQ - Enterprise SaaS Warehouse Management">
+    <meta name="keywords" content="SaaS, Warehouse, AI, ERP, Cybersecurity, Enterprise Software, Neon, Cyberpunk">
+    <meta name="author" content="WareQ Team">
+    <title>WareQ | {% block title %}{% endblock %}</title>
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- GOOGLE FONTS & ICONS -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="{% static 'core/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/about.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/features.css' %}">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar navbar-expand-lg fixed-top cyber-nav">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="/">
+                <img src="{% static 'core/images/Flat_Vector_Logo_for_WareQ-removebg-preview.png' %}" alt="WareQ Logo"
+                    width="45" class="me-2 neon-glow">
+                <span class="logo-text">WareQ</span>
+            </a>
+            <button class="navbar-toggler cyber-toggle" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+                <span class="bi bi-list"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Docs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Community</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
+                    <li class="nav-item"><a class="btn btn-cyber ms-lg-3" href="#">Get Started</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- ================= MAIN WRAPPER ================= -->
+    <main class="main-wrapper flex-grow-1">
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="cyber-footer text-center py-5 mt-auto">
+        <div class="container">
+            <div class="row text-start text-md-center">
+                <!-- Logo & Description -->
+                <div class="col-md-3 mb-4">
+                    <h5 class="fw-bold neon-text">WareQ</h5>
+                    <p class="small">Next-gen SaaS for Warehouses, B2B & B2C.
+                        Built with AI, security, and blazing performance.</p>
+                </div>
+                <!-- Product Links -->
+                <div class="col-md-3 mb-4">
+                    <h6 class="fw-bold">Product</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="features">Features</a></li>
+                        <li><a href="#">Integrations</a></li>
+                        <li><a href="#">API</a></li>
+                        <li><a href="#">Docs</a></li>
+                    </ul>
+                </div>
+                <!-- Company Links -->
+                <div class="col-md-3 mb-4">
+                    <h6 class="fw-bold">Company</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="about">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+                <!-- Connect -->
+                <div class="col-md-3 mb-4">
+                    <h6 class="fw-bold">Connect</h6>
+                    <div class="d-flex justify-content-start justify-content-md-center gap-3">
+                        <a href="#"><i class="bi bi-twitter fs-4"></i></a>
+                        <a href="#"><i class="bi bi-github fs-4"></i></a>
+                        <a href="#"><i class="bi bi-linkedin fs-4"></i></a>
+                        <a href="#"><i class="bi bi-discord fs-4"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-md-3">
+                    <h6 class="fw-bold">Resources</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="#">Guides</a></li>
+                        <li><a href="#">Tutorials</a></li>
+                        <li><a href="#">Community Forum</a></li>
+                        <li><a href="#">Developer Tools</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="fw-bold">Legal</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">GDPR Compliance</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="fw-bold">Community</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Ambassadors</a></li>
+                        <li><a href="#">Hackathons</a></li>
+                        <li><a href="#">Open Source</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="fw-bold">Support</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">System Status</a></li>
+                        <li><a href="#">Report Issue</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="my-4 border-secondary">
+            <p class="mb-0 small">&copy; 2025 WareQ. All rights reserved. | Cyber SaaS Powered</p>
+        </div>
+    </footer>
+
+    <!-- ================= MODALS ================= -->
+    <div class="modal fade" id="subscribeModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-dark text-light">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title">Subscribe to WareQ Updates</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                        </div>
+                        <button type="submit" class="btn btn-cyber">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Extra Modals (Contact, Report Issue, Easter Egg) would go here -->
+
+    <!-- ================= BACK TO TOP ================= -->
+    <button id="backToTop" class="btn btn-cyber">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- ================= SCRIPTS ================= -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'core/js/main.js' %}"></script>
+
+</body>
+</html>
