@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="{% static 'core/css/style.css' %}">
     <link rel="stylesheet" href="{% static 'core/css/about.css' %}">
     <link rel="stylesheet" href="{% static 'core/css/features.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/integrations.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/api.css' %}">
 </head>
 <body class="d-flex flex-column min-vh-100">
 
@@ -73,9 +75,9 @@
                 <div class="col-md-3 mb-4">
                     <h6 class="fw-bold">Product</h6>
                     <ul class="list-unstyled">
-                        <li><a href="features">Features</a></li>
-                        <li><a href="#">Integrations</a></li>
-                        <li><a href="#">API</a></li>
+                        <li><a href="{% url 'core:features' %}">Features</a></li>
+                        <li><a href="{% url 'core:integrations' %}">Integrations</a></li>
+                        <li><a href="{% url 'core:api' %}">API</a></li>
                         <li><a href="#">Docs</a></li>
                     </ul>
                 </div>

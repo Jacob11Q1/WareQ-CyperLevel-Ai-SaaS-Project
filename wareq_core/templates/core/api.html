@@ -1,0 +1,79 @@
+{% extends "core/base.html" %}
+{% load static %}
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'core/css/api.css' %}">
+{% endblock %}
+{% block title %}API{% endblock %}
+
+{% block content %}
+
+<!-- ================= HERO ================= -->
+<section class="api-hero text-center text-light d-flex align-items-center justify-content-center">
+    <div class="container">
+        <h1 class="display-3 fw-bold neon-text">WareQ <span class="highlight">API</span></h1>
+        <p class="lead mt-3">Integrate securely and scale with REST & GraphQL endpoints.</p>
+    </div>
+</section>
+
+<!-- ================= API DOCS GRID ================= -->
+<section class="api-grid py-5">
+    <div class="container">
+        <div class="row g-4 text-center">
+            <div class="col-md-4">
+                <div class="api-card p-4 rounded shadow-lg h-100">
+                    <i class="bi bi-key fs-1 neon-text"></i>
+                    <h4 class="mt-3">Authentication</h4>
+                    <p>Secure API key + OAuth 2.0 support with zero-trust architecture.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="api-card p-4 rounded shadow-lg h-100">
+                    <i class="bi bi-diagram-3 fs-1 neon-text"></i>
+                    <h4 class="mt-3">REST & GraphQL</h4>
+                    <p>Choose your flavor: REST endpoints or advanced GraphQL queries.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="api-card p-4 rounded shadow-lg h-100">
+                    <i class="bi bi-lightning-charge fs-1 neon-text"></i>
+                    <h4 class="mt-3">Real-Time</h4>
+                    <p>WebSocket streaming for live dashboards & instant updates.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= SAMPLE REQUEST TERMINAL ================= -->
+<section class="api-terminal py-5 text-center text-light">
+    <div class="container">
+        <h2 class="fw-bold mb-4">Sample Request</h2>
+        <div class="terminal-box mx-auto p-4">
+            <pre>
+curl -X POST https://api.wareq.com/v1/orders \
+-H "Authorization: Bearer &lt;YOUR_API_KEY&gt;" \
+-d '{ "order_id": "12345", "status": "confirmed" }'
+</pre>
+        </div>
+    </div>
+</section>
+
+<!-- ================= QUOTE ================= -->
+<section class="vision-quote py-5 text-center">
+    <div class="container">
+        <blockquote class="blockquote neon-text">
+            "WareQ API is built for developers — fast, secure, and enterprise-ready."
+        </blockquote>
+    </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="api-cta py-5 text-center text-light">
+    <div class="container">
+        <h2 class="fw-bold mb-3">Start Building with WareQ API</h2>
+        <p class="mb-4">Unlock cyber-level integrations in minutes.</p>
+        <a href="/contact" class="btn btn-lg btn-cyber px-5 py-3 text-dark">Get API Key</a>
+    </div>
+</section>
+
+{% endblock %}

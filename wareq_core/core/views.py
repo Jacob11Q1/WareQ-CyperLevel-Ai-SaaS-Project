@@ -13,3 +13,9 @@ def pricing(request):
 
 def features(request):
     return render(request, "core/features.html")
+
+def integrations(request):
+    return render(request, "core/integrations.html")
+
+def api(request):
+    return render(request, "core/api.html")
